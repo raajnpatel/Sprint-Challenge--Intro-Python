@@ -8,6 +8,7 @@ class Human:
     def __repr__(self):
         return f"<Human: {self.name}, {self.age}>"
 
+
 humans = [
     Human("Alice", 29),
     Human("Bob", 32),
@@ -25,12 +26,14 @@ humans = [
 # whose name starts with 'D':
 print("Starts with D:")
 a = []
+[a.append(x.name) for x in humans if x.name[0] == "D"]
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
 b = []
+[b.append(x.name) for x in humans if x.name[-1] == "e"]
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
@@ -67,5 +70,6 @@ print(g)
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 import math
+
 h = []
 print(h)
