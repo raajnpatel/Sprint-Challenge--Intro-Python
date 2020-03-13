@@ -18,10 +18,14 @@
 #
 # Put a comment noting which class is the base class
 
+
+# ---- BASE CLASS ----
 class Vehicle:
     def __init__(self):
         pass
 
+
+# --------------------
 
 class FlightVehicle(Vehicle):
     def __init__(self):
